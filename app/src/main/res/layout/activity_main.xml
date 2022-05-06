@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/main_label"
+        android:layout_width="312dp"
+        android:layout_height="90dp"
+        android:clickable="false"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:foregroundTint="@color/main"
+        android:text="PerSchool"
+        android:textAlignment="center"
+        android:textColor="@color/main"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="341dp"
+        android:layout_height="47dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Здравствуйте, Пользователь"
+        android:textAlignment="center"
+        android:textColor="#594E4E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131" />
+
+    <ImageView
+        android:id="@+id/burger"
+        android:layout_width="67dp"
+        android:layout_height="63dp"
+        android:src="@drawable/burger"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.362" />
+
+    <ImageView
+        android:id="@+id/weather"
+        android:layout_width="82dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="48dp"
+        android:src="@drawable/weather"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.225" />
+
+    <TextView
+        android:id="@+id/weather_text"
+        android:layout_width="250dp"
+        android:layout_height="62dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="На улице ясно, 23 градуса"
+        android:textAlignment="center"
+        android:textColor="@color/main_text_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/weather"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.245"
+        tools:visibility="visible" />
+
+    <CheckBox
+        android:id="@+id/interesting_button"
+        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+        android:layout_width="189dp"
+        android:layout_height="62dp"
+        android:buttonTint="#601FD3"
+        android:text="Показывать интересные новости"
+        android:textColor="@color/main_text_color"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.361" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
