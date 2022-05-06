@@ -2,26 +2,25 @@ package com.example.perschoolapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 
-public class MainActivity extends Activity {
+public class ProfileActivity extends AppCompatActivity {
     private ImageView home;
-    private ImageView profile;
+    private ImageView profile2;
     private ImageView chat;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_profile);
         home = findViewById(R.id.home);
         home.setOnClickListener( view -> {
             Intent i = new Intent(this, MainActivity.class);
             startActivity(i);
         });
-        profile = findViewById(R.id.profile);
-        profile.setOnClickListener( view -> {
+        profile2 = findViewById(R.id.profile2);
+        profile2.setOnClickListener( view -> {
             Intent i = new Intent(this, ProfileActivity.class);
             startActivity(i);
         });
@@ -31,5 +30,4 @@ public class MainActivity extends Activity {
             startActivity(i);
         });
     }
-
 }
