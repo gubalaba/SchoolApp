@@ -7,7 +7,7 @@
     tools:context=".chat_activity">
 
     <ImageView
-        android:id="@+id/chat2"
+        android:id="@+id/chat3"
         android:layout_width="54dp"
         android:layout_height="55dp"
         android:layout_marginStart="28dp"
@@ -40,5 +40,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="309dp"
+        android:layout_height="299dp"
+        android:layout_marginTop="224dp"
+        android:src="@drawable/chat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

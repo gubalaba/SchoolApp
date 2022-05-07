@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <TextView
@@ -100,15 +99,26 @@
         app:layout_constraintVertical_bias="0.301" />
 
     <ImageView
+        android:id="@+id/chat"
+        android:layout_width="54dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/chat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
         android:id="@+id/home"
         android:layout_width="54dp"
         android:layout_height="55dp"
+        android:layout_marginStart="96dp"
         android:layout_marginBottom="16dp"
         android:src="@drawable/home_button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/profile"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/chat" />
 
     <ImageView
         android:id="@+id/profile"
@@ -118,20 +128,6 @@
         android:layout_marginBottom="16dp"
         android:src="@drawable/profile"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/home" />
-
-    <ImageView
-        android:id="@+id/chat"
-        android:layout_width="54dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="16dp"
-        android:src="@drawable/chat"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/home"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

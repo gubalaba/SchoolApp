@@ -7,7 +7,18 @@
     tools:context=".ProfileActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/bg_image"
+        android:layout_width="484dp"
+        android:layout_height="233dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/bg"
+        app:layout_constraintBottom_toTopOf="@+id/tabs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/chat2"
         android:layout_width="54dp"
         android:layout_height="55dp"
         android:layout_marginStart="28dp"
@@ -40,5 +51,86 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/home" />
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="356dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        android:background="#00FFFFFF"
+        android:text="Фамилия Имя"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+    <ImageView
+        android:id="@+id/settings"
+        android:layout_width="46dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settings" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="415dp"
+        android:layout_height="46dp"
+        android:scrollbarSize="2dp"
+        android:textDirection="firstStrongRtl"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.255"
+        app:tabIconTint="@color/black"
+        app:tabIndicatorColor="@color/main"
+        app:tabRippleColor="#BF2A2A"
+        app:tabTextColor="#000000">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/zapisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Записи" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/profile_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Профиль" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/settings_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbarSize="2dp"
+            android:text="настройки"
+            android:textAlignment="textEnd" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/log_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Выход" />
+    </com.google.android.material.tabs.TabLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
